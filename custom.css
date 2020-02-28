@@ -1,0 +1,16 @@
+.mobile-menu{
+    display:none;
+}
+.dekstop-menu{
+    display:block;
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+    .mobile-menu{
+        display:block;
+    }
+    .dekstop-menu{
+        display:none;
+    }
+ }
