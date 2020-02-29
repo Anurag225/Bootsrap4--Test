@@ -4,6 +4,29 @@
 .dekstop-menu{
     display:block;
 }
+.slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #ff1b1b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.bg-light-blue{
+    background-color: aquamarine;
+
+}
+.bg-light-grey{
+    background-color: #cadff3;
+
+}
+.bg-img{
+    width: 100px;
+    height:200px;
+    background: url("https://dummyimage.com/200.png/09f/fff") no-repeat center;
+    background-size: 100% 100%;
+}
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {

@@ -7,124 +7,335 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="custom.css">
-  
-</head>
-<div class="container p-0">
-  <div class="row p-0 m-0 border border-left-0 border-right-0 ">
-    <div class="col-lg-6 col-sm-12 col-xs-12 d-flex justify-content-lg-start text-sm-center ">
-      <a href="mailto:anuragsdhepe@gmail.com"><span class="fa fa-envelope  p-2"> anuragsdhepe@gmail.com </span></a>
-      <span class="">|</span>
-      <span class="fa fa-phone  p-2"> +91-9595448981 </span>
+  <!--CSS 
+    Add slick.css in your <head>
+    -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
+    <link rel="stylesheet" href="custom.css">
+    
+  </head>
+  <!-- start nav -->
+  <div class="container p-0">
+    <div class="row p-0 m-0 border border-left-0 border-right-0 ">
+      <div class="col-lg-6 col-sm-12 col-xs-12 d-flex justify-content-lg-start text-sm-center ">
+        <a href="mailto:anuragsdhepe@gmail.com"><span class="fa fa-envelope  p-2"> anuragsdhepe@gmail.com </span></a>
+        <span class="">|</span>
+        <span class="fa fa-phone  p-2"> +91-9595448981 </span>
+      </div>
+      <div class="col-lg-6 col-sm-12 col-xs-12 d-flex justify-content-lg-end text-sm-center">
+        <span class="fa fa-facebook  p-2"></span>
+        <span class="">|</span>
+        <span class="fa fa-twitter  p-2"></span>
+        <span class="">|</span>
+        <span class="fa fa-instagram  p-2"></span>
+        <span class="">|</span>
+        <span class="fa fa-google-plus  p-2"></span>
+        <span class="">|</span>
+        <span class="fa fa-linkedin  p-2"></span>
+      </div>
     </div>
-    <div class="col-lg-6 col-sm-12 col-xs-12 d-flex justify-content-lg-end text-sm-center">
-      <span class="fa fa-facebook  p-2"></span>
-      <span class="">|</span>
-      <span class="fa fa-twitter  p-2"></span>
-      <span class="">|</span>
-      <span class="fa fa-instagram  p-2"></span>
-      <span class="">|</span>
-      <span class="fa fa-google-plus  p-2"></span>
-      <span class="">|</span>
-      <span class="fa fa-linkedin  p-2"></span>
-    </div>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        
-      </ul>
-    </div>
-    <form class="form-inline justify-content-end">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </nav> 
-</div>
-<div class="container p-0"> 
-  <div class="row">
-    <div class="col-12">
-      <div id="demo" class="carousel slide" data-ride="carousel">
-        
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          
         </ul>
+      </div>
+      <form class="form-inline justify-content-end">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav> 
+  </div>
+  <!-- end nav -->
+  <!-- start Slider -->
+  <div class="container p-0"> 
+    <div class="row">
+      <div class="col-12">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="img-fluid" src="https://dummyimage.com/600x300/000/fff" alt="Los Angeles" width="100%" height="auto">
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <img class="img-fluid" src="https://dummyimage.com/600x300/000/fff" alt="Chicago" width="100%" height="auto">
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="https://dummyimage.com/600x300/000/fff" alt="New York" width="100%" height="auto">
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  <!-- end Slider -->
+  <!-- start about us -->
+  <section class="aboutus ">
+    <div class="container bg-light-blue">
+      <div class="row">
+        <div class="col-12 p-4">
+          <h1 class="text-center">About us</h1>
+          
+        </div>
+        <div class="col-12 text-center p-5">
+          <p>
+            Similar to the contextual text color classes, easily set the background of an element to any contextual class. 
+            Anchor components will darken on hover, just like the text classes.Similar to the contextual text color classes,
+            easily set the background of an element to any contextual class.
+          </p>
+          <p>
+            Similar to the contextual text color classes, easily set the background of an element to any contextual class. 
+            Anchor components will darken on hover, just like the text classes.
+          </p>
+          <p>
+            Similar to the contextual text color classes, easily set the background of an element to any contextual class. 
+            Anchor components will darken on hover, just like the text classes.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center p-5">
+          <button type="button" class="btn btn-outline-primary border border-2">View All</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about us -->
+  <!-- start products -->
+  <section class="Products">
+    <div class="container bg-light-grey">
+      <div class="row">
+        <div class="col-12 p-4">
+          <h1 class="text-center">Products</h1>
+        </div>
         
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://dummyimage.com/300.png/09f/fff" alt="Los Angeles" width="100%" height="500">
-            <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>We had such a great time in LA!</p>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 order-1 text-center">
+          <h4>Products</h4>
+        </div>
+        <div class="col-lg-6 col-sm-12 bg-light-blue order-lg-1 ">
+          <div class="row">
+            <div class="col-6 border border-1 bg-img"></div>
+            <div class="col-6  border border-1 bg-img"></div>
+            <div class="col-6  border border-1 bg-img"></div>
+            <div class="col-6  border border-1 bg-img"></div>
           </div>
-          <div class="carousel-item ">
-            <img src="https://dummyimage.com/300.png/09f/fff" alt="Chicago" width="100%" height="500">
-            <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>We had such a great time in LA!</p>
-            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 bg-light-blue">
+          <div class="row">
+            <div class="col-6 border border-1 bg-img"></div>
+            <div class="col-6  border border-1 bg-img"></div>
+            <div class="col-6  border border-1 bg-img"></div>
+            <div class="col-6  border border-1 bg-img"></div>
           </div>
-          <div class="carousel-item">
-            <img src="https://dummyimage.com/300.png/09f/fff" alt="New York" width="100%" height="500">
-            <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>We had such a great time in LA!</p>
+        </div>
+        <div class="col-lg-6 col-sm-12 text-center">
+          <h4>Products</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 order-1 text-center">
+          <h4>Products</h4>
+        </div>
+        <div class="col-lg-6 col-sm-12 bg-light-blue  order-lg-1  ">
+          <div class="row">
+            <div class="col-6 border border-1 bg-img"></div>
+            <div class="col-6  border border-1 bg-img"></div>
+            <div class="col-6  border border-1 bg-img"></div>
+            <div class="col-6  border border-1 bg-img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center p-5">
+          <button type="button" class="btn btn-outline-primary border border-2">View All</button>
+        </div>
+      </div>
+    </div>   
+  </section>
+  <!-- end products -->
+  <!-- testimonials -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 p-4">
+          <h1 class="text-center">Testimonials</h1>
+          
+        </div>
+        <div class="col-12">
+          <div class="slide responsive m-2">
+            <div class="p-4"><img class="img-fluid" src="https://dummyimage.com/300.png/09f/fff" alt="" width="100%"></div>
+            <div class="p-4"><img class="img-fluid" src="https://dummyimage.com/300.png/09f/fff" alt="" width="100%"></div>
+            <div class="p-4"><img class="img-fluid" src="https://dummyimage.com/300.png/09f/fff" alt="" width="100%"></div>
+            <div class="p-4"><img class="img-fluid" src="https://dummyimage.com/300.png/09f/fff" alt="" width="100%"></div>
+            <div class="p-4"><img class="img-fluid" src="https://dummyimage.com/300.png/09f/fff" alt="" width="100%"></div>
+            <div class="p-4"><img class="img-fluid" src="https://dummyimage.com/300.png/09f/fff" alt="" width="100%"></div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <!-- start footer -->
+  <section id="contact-form">
+    <div class="container bg-secondary">
+      <div class="row">
+        <div class="col-12  col-lg-9 offset-lg-2 p-5">
+          <form >
+            <div class="row">
+              <div class="col col-lg-6 col-sm-12">
+                <div class="form-group col-md-12">
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-12">
+                  <input type="text" class="form-control" id="Name" placeholder="Name">
+                </div>
+                <div class="form-group col-md-12">
+                  <input type="tel" class="form-control" id="Name" placeholder="Mobile"> 
+                </div> 
+              </div>
+              <div class="col col-lg-6 col-sm-12">          
+                <div class="form-group col-md-12">                
+                  <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>                  
+                </div>
+                <div class="form-group col-md-12">                 
+                  <button type="submit" class="btn btn-primary ">Sign in</button>
+                </div>                
+              </div>
+            </div>    
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-9 offset-lg-2 ">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h>Office Address</h>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h>Resident Address</h>
             </div>
           </div>
         </div>
         
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
       </div>
     </div>
-    
-  </div>
+  </section>
+  <!-- end footer -->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   
-</div>
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js" ></script>
-</body>
-
-</html>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js" ></script>
+  
+  <!--JS
+    Add slick.js before your closing <body> tag, after jQuery (requires jQuery 1.7 +)
+    -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+    <script>
+      $('.responsive').slick({
+        
+        infinite: true,
+        arrows: true,
+        speed: 3000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        accessibility: true,
+        responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            arrows: true,
+            
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            speed: 2000,
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+        ]
+      });
+    </script>
+  </body>
+  
+  </html>
