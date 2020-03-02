@@ -27,6 +27,13 @@
     background: url("https://dummyimage.com/200.png/09f/fff") no-repeat center;
     background-size: 100% 100%;
 }
+.dot{
+    width:5px;  
+    height:5px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    margin-top: 20px;
+}
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
@@ -35,5 +42,11 @@ and (max-device-width : 667px) {
     }
     .dekstop-menu{
         display:none;
+    }
+    .slick-next {
+        right: 0px;
+    }
+    .slick-prev {
+        left: 0px;
     }
  }
