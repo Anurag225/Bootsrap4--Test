@@ -31,7 +31,7 @@
     color:rgb(61, 61, 59);
 }
 .trn-nav{
-    background-color: transparent;
+    background-color: #dcd0d09c;
     z-index:99;
 }
 .custom-toggler .navbar-toggler-icon {
