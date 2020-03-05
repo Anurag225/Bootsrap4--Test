@@ -1,0 +1,431 @@
+*{
+    padding:0;
+    margin:0;
+}
+.max-width-1000{
+    max-width:1000px;
+}
+.row .col { 
+    height: 100px; 
+    background: green; 
+}
+.logo{
+    /* max-width: 100%;
+    height: 100px; */
+}
+/* navbar css */
+.nav-item:active {
+    border-bottom: 2px solid red;
+}
+.nav-link {
+    text-decoration: none;
+    font-weight: 600;
+    color:#000;
+}
+.nav-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid red;
+    color:rgb(61, 61, 59);
+}
+.trn-nav{
+    background-color: transparent;
+    z-index:99;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url
+    ("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,550,24, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* end navbar css */
+
+/* background carousal slider */
+.section-slider{
+    margin-top:-116px;
+}
+
+.carousel-indicators{
+    bottom:60px;
+}
+.carousel-indicators li{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.carousel-indicators .active{
+    background-color: tomato;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    display:none;
+}
+
+
+/* End background carousal slider */
+/* our custom section css */
+.our-customers{
+    background-image: url('images/wave-copy.png') ;
+    /* Full height */
+    height: 100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+}
+.icon-img{
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.horizontal-line-custom{
+    margin: auto;
+    width: 40px;
+    height: 2px;
+    border: 2px solid red;
+    text-align:center;
+}
+.solution-icon-img{
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 50%;
+    color:white;
+    background-color: rgb(247, 46, 89);
+    margin: auto;
+    padding:10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+/* End our custom section css */
+
+/* wheel animation section css */
+.btn-icon{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.btn-icon:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}
+/* end */
+/* start text-slider */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    /* background: #f1f1f1f1; */
+    margin-top: 150px;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width:40px;
+    height:40px;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius:50%;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+/* end */
+
+/* start blogs css */
+.blogs{
+    background-image: url('images/wave-bg.png') ;
+    /* Full height */
+    height: 100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* .img-overlay{} */
+.img-overlay {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    /* width: 100%; */
+    height: auto;
+  }
+.overlay {
+
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    background-color: rgba(201, 67, 85, 0.5);
+    overflow: hidden;
+    width: 85%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 8px;
+    
+}
+
+.img-overlay:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* end blogs */
+/* form css */
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 5px);
+    padding: 1.8rem .95rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.custom-btn{
+    border-radius: 30px;
+}
+.arc-img{
+    position: absolute;
+    bottom: 135px;
+    left: 350px;
+    z-index: 999;
+}
+.boat-img{
+    position: absolute;
+    bottom: 268px;
+    left: 346px;
+     /* bottom: 168px;
+    left: 370px; */
+    z-index: 999;
+    transform: rotate(45deg);
+    animation:myanimation 10s infinite;
+-webkit-animation:myanimation 10s infinite;
+-moz-animation:myanimation 10s infinite;
+-o-animation:myanimation 10s infinite;
+-ms-animation:myanimation 10s infinite;
+}
+@keyframes myanimation
+{
+	0%{top:268px;left:346px;transform: rotate(45deg);}
+    20%{top:275px;left:335px;transform: rotate(36deg);}
+    40%{top:305px;left:340px;transform: rotate(33deg);}
+    60%{top:350px;left:355px;transform: rotate(30deg);}
+    80%{top:380px;left:385px;transform: rotate(23deg);}
+    100%{top:370px;left:520px;transform: rotate(20deg);}
+	/* 10%{background:green;top:350px;left:150px;}
+	15%{background:powderblue;top:0px;left:250px;}
+	20%{background:orange;top:350px;left:350px;}
+	25%{background:pink;top:0px;left:450px;}
+	30%{background:purple;top:350px;left:550px;}
+	35%{background:black;top:0px;left:650px;}
+	40%{background:white;top:350px;left:750px;}
+	45%{background:grey;top:0px;left:850px;}
+	50%{background:blue;top:350px;left:950px;}
+	55%{background:aqua;top:0px;left:850px;}
+	60%{background:red;top:350px;left:750px;}
+	65%{background:green;top:0px;left:650px;}
+	70%{background:powderblue;top:350px;left:550px;}
+	75%{background:orange;top:0px;left:450px;}
+	80%{background:pink;top:350px;left:350px;}
+	85%{background:purple;top:0px;left:250px;}
+	90%{background:black;top:350px;left:150px;}
+	95%{background:white;top:0px;left:50px;}
+	100%{background:grey;top:350px;left:0px;}
+	 */
+}
+@-webkit-keyframes myanimation
+{
+    0%{top:268px;left:346px;transform: rotate(45deg);}
+    20%{top:275px;left:335px;transform: rotate(36deg);}
+    40%{top:305px;left:340px;transform: rotate(33deg);}
+    60%{top:350px;left:355px;transform: rotate(30deg);}
+    80%{top:380px;left:385px;transform: rotate(23deg);}
+    100%{top:370px;left:520px;transform: rotate(20deg);}
+	/* 0%{background:aqua;top:350px;left:0px;}
+	5%{background:red;top:0px;left:50px;} */
+	/* 10%{background:green;top:350px;left:150px;}
+	15%{background:powderblue;top:0px;left:250px;}
+	20%{background:orange;top:350px;left:350px;}
+	25%{background:pink;top:0px;left:450px;}
+	30%{background:purple;top:350px;left:550px;}
+	35%{background:black;top:0px;left:650px;}
+	40%{background:white;top:350px;left:750px;}
+	45%{background:grey;top:0px;left:850px;}
+	50%{background:blue;top:350px;left:950px;}
+	55%{background:aqua;top:0px;left:850px;}
+	60%{background:red;top:350px;left:750px;}
+	65%{background:green;top:0px;left:650px;}
+	70%{background:powderblue;top:350px;left:550px;}
+	75%{background:orange;top:0px;left:450px;}
+	80%{background:pink;top:350px;left:350px;}
+	85%{background:purple;top:0px;left:250px;}
+	90%{background:black;top:350px;left:150px;}
+	95%{background:white;top:0px;left:50px;}
+	100%{background:grey;top:350px;left:0px;} */
+}	
+	
+
+/*  start mobile-responsive media queries */
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) { 
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,550,24, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .carousel-indicators{
+        bottom:35px;
+    }
+    .carousel-control-next-icon,.carousel-control-prev-icon{
+        display:none;
+    }
+    
+    /* our custom section css */
+    .our-customers{
+        background-image: url('images/wave-copy.png') ;
+        height:100%;
+        
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% ;
+    }
+    
+    /* start wheel */
+    .slideshow-container {
+        position: relative;
+        /* background: #f1f1f1f1; */
+        margin-top: 0;
+    }
+
+/* start */
+    .img-overlay {
+        position: relative;
+        width: 50%;
+        margin-bottom: 30px;
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    .overlay {
+    
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        right: 0;
+        background-color: rgba(201, 67, 85, 0.5);
+        overflow: hidden;
+        width: 93%;
+        height: 0;
+        transition: .5s ease;
+        border-radius: 8px;
+        
+    }
+    
+    .img-overlay:hover .overlay {
+        height: 100%;
+    }
+    
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    /* end blogs */
+}
