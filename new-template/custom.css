@@ -17,6 +17,9 @@
 .nav-item:active {
     border-bottom: 2px solid red;
 }
+.nav-item .active {
+    background-color:none;
+}
 .nav-link {
     text-decoration: none;
     font-weight: 600;
@@ -125,11 +128,11 @@
     border-radius: 50%;
 }
 /* end */
-/* start text-slider */
-/* Slideshow container */
+
+/* start text-slider / Slideshow container */
+
 .slideshow-container {
     position: relative;
-    /* background: #f1f1f1f1; */
     margin-top: 150px;
 }
 
@@ -189,7 +192,7 @@
 }
 
 /* Add a background color to the active dot/circle */
-.active, .dot:hover {
+ .dot:hover {
     background-color: #717171;
 }
 
@@ -278,78 +281,74 @@ q {font-style: italic;}
     left: 350px;
     z-index: 999;
 }
+.india-location{
+    position: absolute;
+    top: 198px;
+    left: 338px;
+    z-index: 999;
+    
+}
+.singapore-location{
+    position: absolute;
+    top: 334px;
+    left: 490px;
+    z-index: 999;
+}
 .boat-img{
     position: absolute;
-    bottom: 268px;
-    left: 346px;
+    top: 230px;
+    left: 349px;
      /* bottom: 168px;
     left: 370px; */
     z-index: 999;
-    transform: rotate(45deg);
-    animation:myanimation 10s infinite;
--webkit-animation:myanimation 10s infinite;
--moz-animation:myanimation 10s infinite;
--o-animation:myanimation 10s infinite;
--ms-animation:myanimation 10s infinite;
+    transform: rotate(48deg);
+    animation:myanimation 2s infinite;
+-webkit-animation:myanimation 2s infinite;
+-moz-animation:myanimation 2s infinite;
+-o-animation:myanimation 2s infinite;
+-ms-animation:myanimation 2s infinite;
 }
-@keyframes myanimation
-{
-	0%{top:268px;left:346px;transform: rotate(45deg);}
-    20%{top:275px;left:335px;transform: rotate(36deg);}
-    40%{top:305px;left:340px;transform: rotate(33deg);}
-    60%{top:350px;left:355px;transform: rotate(30deg);}
-    80%{top:380px;left:385px;transform: rotate(23deg);}
-    100%{top:370px;left:520px;transform: rotate(20deg);}
-	/* 10%{background:green;top:350px;left:150px;}
-	15%{background:powderblue;top:0px;left:250px;}
-	20%{background:orange;top:350px;left:350px;}
-	25%{background:pink;top:0px;left:450px;}
-	30%{background:purple;top:350px;left:550px;}
-	35%{background:black;top:0px;left:650px;}
-	40%{background:white;top:350px;left:750px;}
-	45%{background:grey;top:0px;left:850px;}
-	50%{background:blue;top:350px;left:950px;}
-	55%{background:aqua;top:0px;left:850px;}
-	60%{background:red;top:350px;left:750px;}
-	65%{background:green;top:0px;left:650px;}
-	70%{background:powderblue;top:350px;left:550px;}
-	75%{background:orange;top:0px;left:450px;}
-	80%{background:pink;top:350px;left:350px;}
-	85%{background:purple;top:0px;left:250px;}
-	90%{background:black;top:350px;left:150px;}
-	95%{background:white;top:0px;left:50px;}
-	100%{background:grey;top:350px;left:0px;}
-	 */
+@keyframes myanimation{
+    0%{top:230px;left:349px;transform: rotate(48deg);}
+    10%{top:249px;left:338px;transform: rotate(30deg);}
+    20%{top:281px;left:338px;transform: rotate(22deg);}
+    30%{top:304px;left:339px;transform: rotate(7deg);}
+    40%{top:335px;left:349px;transform: rotate(-9deg);}
+    50%{top:345px;left:355px;transform: rotate(-20deg);}
+    60%{top:347px;left:353px;transform: rotate(-26deg);}
+    70%{top:353px;left:358px;transform: rotate(-29deg);}
+    75%{top:360px;left:370px;transform: rotate(-29deg);}
+    80%{top:375px;left:376px;transform: rotate(-49deg);}
+    85%{top:379px;left:380px;transform: rotate(-53deg);}
+    90%{top:377px;left:388px;transform: rotate(-44deg);}
+    95%{top:380px;left:394px;transform: rotate(-54deg);}
+    96%{top:382px;left:390px;transform: rotate(-55deg);}
+    97%{top:387px;left:406px;transform: rotate(-61deg);}
+    98%{top:391px;left:415px;transform: rotate(-65deg);}
+    99%{top:392px;left:434px;transform: rotate(-72deg);}
+    100%{top:380px;left:490px;transform: rotate(-87deg);}
+	
 }
 @-webkit-keyframes myanimation
 {
-    0%{top:268px;left:346px;transform: rotate(45deg);}
-    20%{top:275px;left:335px;transform: rotate(36deg);}
-    40%{top:305px;left:340px;transform: rotate(33deg);}
-    60%{top:350px;left:355px;transform: rotate(30deg);}
-    80%{top:380px;left:385px;transform: rotate(23deg);}
-    100%{top:370px;left:520px;transform: rotate(20deg);}
-	/* 0%{background:aqua;top:350px;left:0px;}
-	5%{background:red;top:0px;left:50px;} */
-	/* 10%{background:green;top:350px;left:150px;}
-	15%{background:powderblue;top:0px;left:250px;}
-	20%{background:orange;top:350px;left:350px;}
-	25%{background:pink;top:0px;left:450px;}
-	30%{background:purple;top:350px;left:550px;}
-	35%{background:black;top:0px;left:650px;}
-	40%{background:white;top:350px;left:750px;}
-	45%{background:grey;top:0px;left:850px;}
-	50%{background:blue;top:350px;left:950px;}
-	55%{background:aqua;top:0px;left:850px;}
-	60%{background:red;top:350px;left:750px;}
-	65%{background:green;top:0px;left:650px;}
-	70%{background:powderblue;top:350px;left:550px;}
-	75%{background:orange;top:0px;left:450px;}
-	80%{background:pink;top:350px;left:350px;}
-	85%{background:purple;top:0px;left:250px;}
-	90%{background:black;top:350px;left:150px;}
-	95%{background:white;top:0px;left:50px;}
-	100%{background:grey;top:350px;left:0px;} */
+    0%{top:230px;left:349px;transform: rotate(48deg);}
+    10%{top:249px;left:338px;transform: rotate(30deg);}
+    20%{top:281px;left:338px;transform: rotate(22deg);}
+    30%{top:304px;left:339px;transform: rotate(7deg);}
+    40%{top:335px;left:349px;transform: rotate(-9deg);}
+    50%{top:345px;left:355px;transform: rotate(-20deg);}
+    60%{top:347px;left:353px;transform: rotate(-26deg);}
+    70%{top:353px;left:358px;transform: rotate(-29deg);}
+    75%{top:360px;left:370px;transform: rotate(-29deg);}
+    80%{top:375px;left:376px;transform: rotate(-49deg);}
+    85%{top:379px;left:380px;transform: rotate(-53deg);}
+    90%{top:377px;left:388px;transform: rotate(-44deg);}
+    95%{top:380px;left:394px;transform: rotate(-54deg);}
+    96%{top:382px;left:390px;transform: rotate(-55deg);}
+    97%{top:387px;left:406px;transform: rotate(-61deg);}
+    98%{top:391px;left:415px;transform: rotate(-65deg);}
+    99%{top:392px;left:434px;transform: rotate(-72deg);}
+    100%{top:380px;left:490px;transform: rotate(-87deg);}
 }	
 	
 
@@ -428,4 +427,17 @@ and (max-device-width : 736px) {
         text-align: center;
     }
     /* end blogs */
+    .arc-img{
+        display:none;
+    }
+    .india-location{
+        display:none;
+        
+    }
+    .singapore-location{
+        display:none;
+    }
+    .boat-img{
+        display:none;
+    }
 }
