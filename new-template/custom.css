@@ -59,7 +59,17 @@
 .carousel-control-next-icon,.carousel-control-prev-icon{
     display:none;
 }
-
+.carousel-caption {
+    position: absolute;
+    /* right: 15%; */
+    top: 345px;
+    left: 60%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
 
 /* End background carousal slider */
 /* our custom section css */
@@ -67,7 +77,7 @@
     background-image: url('images/wave-copy.png') ;
     /* Full height */
     height: 100%;
-    
+    max-width: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -100,6 +110,12 @@
     padding:10px;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
+.ship-img{
+    position: absolute;
+    bottom: 125px;
+    right: 0px;
+    z-index: 999;
+}
 /* End our custom section css */
 
 /* wheel animation section css */
@@ -114,14 +130,14 @@
     color: black;
 }
 
-.previous {
-    background-color: #f1f1f1;
-    color: black;
+.prev {
+    background-color: #dc3545;
+    color: #fff;
 }
 
 .next {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #dc3545;
+    color: #fff;
 }
 
 .round {
@@ -133,7 +149,7 @@
 
 .slideshow-container {
     position: relative;
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 /* Slides */
@@ -151,8 +167,8 @@
     width:40px;
     height:40px;
     margin-top: -30px;
-    padding: 16px;
-    color: #888;
+   padding: 5px 15px 5px;
+   color: #fff;
     font-weight: bold;
     font-size: 20px;
     border-radius:50%;
@@ -168,7 +184,7 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color:rgba(0, 0, 0, 0.13);
     color: white;
 }
 
@@ -192,7 +208,7 @@
 }
 
 /* Add a background color to the active dot/circle */
- .dot:hover {
+.dot:hover {
     background-color: #717171;
 }
 
@@ -218,15 +234,15 @@ q {font-style: italic;}
 .img-overlay {
     position: relative;
     width: 50%;
-  }
-  
-  .image {
+}
+
+.image {
     display: block;
     /* width: 100%; */
     height: auto;
-  }
+}
 .overlay {
-
+    
     position: absolute;
     bottom: 0;
     left: 15px;
@@ -298,15 +314,15 @@ q {font-style: italic;}
     position: absolute;
     top: 230px;
     left: 349px;
-     /* bottom: 168px;
+    /* bottom: 168px;
     left: 370px; */
     z-index: 999;
     transform: rotate(48deg);
     animation:myanimation 2s infinite;
--webkit-animation:myanimation 2s infinite;
--moz-animation:myanimation 2s infinite;
--o-animation:myanimation 2s infinite;
--ms-animation:myanimation 2s infinite;
+    -webkit-animation:myanimation 2s infinite;
+    -moz-animation:myanimation 2s infinite;
+    -o-animation:myanimation 2s infinite;
+    -ms-animation:myanimation 2s infinite;
 }
 @keyframes myanimation{
     0%{top:230px;left:349px;transform: rotate(48deg);}
@@ -327,7 +343,7 @@ q {font-style: italic;}
     98%{top:391px;left:415px;transform: rotate(-65deg);}
     99%{top:392px;left:434px;transform: rotate(-72deg);}
     100%{top:380px;left:490px;transform: rotate(-87deg);}
-	
+    
 }
 @-webkit-keyframes myanimation
 {
@@ -350,7 +366,7 @@ q {font-style: italic;}
     99%{top:392px;left:434px;transform: rotate(-72deg);}
     100%{top:380px;left:490px;transform: rotate(-87deg);}
 }	
-	
+
 
 /*  start mobile-responsive media queries */
 @media only screen 
@@ -383,21 +399,21 @@ and (max-device-width : 736px) {
         /* background: #f1f1f1f1; */
         margin-top: 0;
     }
-
-/* start */
+    
+    /* start */
     .img-overlay {
         position: relative;
         width: 50%;
         margin-bottom: 30px;
-      }
-      
-      .image {
+    }
+    
+    .image {
         display: block;
         width: 100%;
         height: auto;
-      }
+    }
     .overlay {
-    
+        
         position: absolute;
         bottom: 0;
         left: 15px;
@@ -427,17 +443,66 @@ and (max-device-width : 736px) {
         text-align: center;
     }
     /* end blogs */
-    .arc-img{
-        display:none;
-    }
+    
+    .arc-img {
+        position: absolute;
+        width: 91px;
+        bottom: 71px;
+        left: 195px;
+        z-index: 999;
+    } 
     .india-location{
-        display:none;
+        position: absolute;
+        top: 85px;
+        left: 165px;
+        z-index: 999;
         
     }
     .singapore-location{
-        display:none;
+        position: absolute;
+        top: 157px;
+        left: 243px;
+        z-index: 999;
     }
     .boat-img{
-        display:none;
+        position: absolute;
+        width: 18px;
+        top: 124px;
+        left: 190px;
+        z-index: 999;
+        transform: rotate(31deg);
+        animation:myanimation 2s infinite;
+        -webkit-animation:myanimation 2s infinite;
+        -moz-animation:myanimation 2s infinite;
+        -o-animation:myanimation 2s infinite;
+        -ms-animation:myanimation 2s infinite;
     }
+    @keyframes myanimation{
+        0%{top:124px;left:190px;transform: rotate(31deg);}
+        10%{top:130px;left:187px;transform: rotate(30deg);}
+        20%{top:152px;left:189px;transform: rotate(16deg);}
+        30%{top:170px;left:189px;transform: rotate(-11deg);}
+        40%{top:176px;left:190px;transform: rotate(-20deg);}
+        50%{top:182px;left:200px;transform: rotate(-24deg);}
+        60%{top:188px;left:200px;transform: rotate(-40deg);}
+        70%{top:196px;left:218px;transform: rotate(-48deg);}
+        80%{top:200px;left:235px;transform: rotate(-66deg);}
+        90%{top:205px;left:250px;transform: rotate(-91deg);}       
+        100%{top:198px;left:264px;transform: rotate(-101deg);}
+        
+    }
+    @-webkit-keyframes myanimation
+    {
+        0%{top:124px;left:190px;transform: rotate(31deg);}
+        10%{top:130px;left:187px;transform: rotate(30deg);}
+        20%{top:152px;left:189px;transform: rotate(16deg);}
+        30%{top:170px;left:189px;transform: rotate(-11deg);}
+        40%{top:176px;left:190px;transform: rotate(-20deg);}
+        50%{top:182px;left:200px;transform: rotate(-24deg);}
+        60%{top:188px;left:200px;transform: rotate(-40deg);}
+        70%{top:196px;left:218px;transform: rotate(-48deg);}
+        80%{top:200px;left:235px;transform: rotate(-66deg);}
+        90%{top:205px;left:250px;transform: rotate(-91deg);}       
+        100%{top:198px;left:264px;transform: rotate(-101deg);}
+    }	
 }
