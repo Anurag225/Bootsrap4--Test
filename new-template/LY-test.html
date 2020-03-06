@@ -26,22 +26,22 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#section-2">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Solution</a>
+                            <a class="nav-link" href="#section-3">Solution</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">News & Updates </a>
+                            <a class="nav-link" href="#section-4">News & Updates </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="#section-5">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
+                            <a class="nav-link" href="#section-6">Contact us</a>
                         </li>
                         
                     </ul>
@@ -49,7 +49,7 @@
             </div>
             
         </nav>
-        <section class="bg-slider">
+        <section class="bg-slider" id="section-1">
             <!-- Image and text -->
             <!-- <nav class="navbar navbar-expand-lg trn-nav sticky-top">
                 <div class="container mt-5">
@@ -86,7 +86,7 @@
                 </div>
                 
             </nav> -->
-            <div class="section-slider">
+            <div class="section-slider" >
                 <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -99,21 +99,21 @@
                             <div class="carousel-caption d-none d-md-block text-left">
                                 <h3 class="text-left text-dark">Cost effective Vessel IT solutions</h3>
                                 <button type="button" class="btn btn-lg btn-light custom-btn " > Enquiry Now </button>
-                              </div>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="images/banner-1.jpg" alt="Second slide">
                             <div class="carousel-caption d-none d-md-block text-left">
                                 <h3 class="text-left text-dark">Second slide label</h3>
                                 <button type="button" class="btn btn-lg btn-light custom-btn " > Enquiry Now </button>
-                              </div>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="images/banner-1.jpg" alt="Third slide">
                             <div class="carousel-caption d-none d-md-block text-left">
                                 <h3 class="text-left text-dark">Third slide label</h3>
                                 <button type="button" class="btn btn-lg btn-light custom-btn " > Enquiry Now </button>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -128,7 +128,7 @@
             </div>
             
         </section>
-        <section class="our-customers" >
+        <section class="our-customers" id="section-2">
             <div class="container max-width-1000">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-12 col-sm-12">
@@ -186,7 +186,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container max-width-1000">
+            <div class="container max-width-1000" id="section-3">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-12 col-sm-12">
                         <h3 class="text-center mt-3 pt-5">Sea of Solutions</h3>
@@ -238,11 +238,11 @@
                         </div>
                         <img src="images/graphic-ship-2.png" alt="" class="img-fluid ship-img">
                     </div>
-                   
+                    
                 </div>
                 
             </div>
-            <div class="container">
+            <div class="container" id="section-4">
                 <div class="row">
                     <div class="col-12 col-lg-12 col-sm-12">
                         <h3 class="text-center mt-3 pt-5">Our Sail to the Land of Achivements</h3>
@@ -288,7 +288,7 @@
                     </div>
                 </div>
             </section>
-            <section class="blogs">
+            <section class="blogs" id="section-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-lg-12 col-sm-12">
@@ -317,7 +317,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container say-ahoy pb-5">
+                <div class="container say-ahoy pb-5" id="section-6">
                     <div class="row">
                         <div class="col-12 col-lg-12 col-sm-12">
                             <h3 class="text-center mt-3 pt-5">Say Ahoy</h3>
@@ -372,6 +372,14 @@
             <!--JS Add slick.js before your closing <body> tag, after jQuery (requires jQuery 1.7 +)-->
                 <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+                <script>
+                    $('ul.nav').find('a').click(function(){
+                        var $href = $(this).attr('href');
+                        var $anchor = $('#'+$href).offset();
+                        window.scrollTo($anchor.left,$anchor.top);
+                        return false;
+                    });
+                </script>
                 <script>
                     
                     var tmpAnimation = 0;
