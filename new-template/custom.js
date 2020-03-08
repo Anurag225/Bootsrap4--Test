@@ -1,4 +1,4 @@
-// start scroll page js for sticky navbar
+                     // start scroll page js for sticky navbar
                         window.onscroll = function() {myFunction()};
                         
                         var header = document.getElementById("myHeader");
@@ -22,7 +22,8 @@
                             return false;
                         });
                     // end scroll page js for sticky navbar
-                        //  start wheel animation js
+                    
+                    //  start wheel animation js
                         
                         var tmpAnimation = 0;
                         $("#btn-next").click(function(){
@@ -30,7 +31,7 @@
                             tmpAnimation = tmpAnimation + 45;
                             
                             $({degrees: tmpAnimation - 45}).animate({degrees: tmpAnimation}, {
-                                duration: 2000,
+                                duration: 1000,
                                 step: function(now) {
                                     element.css({
                                         transform: 'rotate(' + now + 'deg)'
@@ -43,7 +44,7 @@
                             tmpAnimation = tmpAnimation - 45;
                             
                             $({degrees: tmpAnimation + 45}).animate({degrees: tmpAnimation}, {
-                                duration: 2000,
+                                duration: 1000,
                                 step: function(now) {
                                     element.css({
                                         transform: 'rotate(' + now + 'deg)'
