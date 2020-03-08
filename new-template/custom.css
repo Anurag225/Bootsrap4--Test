@@ -9,24 +9,8 @@
     height: 100px; 
     background: green; 
 }
-.logo{
-    /* max-width: 100%;
-    height: 100px; */
-}
+
 /* navbar css */
-/* html:not([data-scroll='1']) nav {
-    position: fixed;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.021);
-    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
-  }
-  
-  nav {
-    box-sizing: border-box;
-    padding: 1em;
-    -webkit-transition: background-color .25s;
-    transition: background-color .25s;
-  } */
 .nav-item:active {
     border-bottom: 2px solid red;
 }
@@ -44,7 +28,7 @@
     color:rgb(61, 61, 59);
 }
 .trn-nav{
-    /* background-color: #e0e0e0f0; */
+   
     z-index:99;
 }
 .custom-toggler .navbar-toggler-icon {
@@ -70,7 +54,7 @@
     background-color: tomato;
 }
 .carousel-control-next-icon,.carousel-control-prev-icon{
-    display:none;
+    display:block;
 }
 .carousel-caption {
     position: absolute;
@@ -83,15 +67,13 @@
     color: #fff;
     text-align: center;
 }
-
 /* End background carousal slider */
+
 /* our custom section css */
 .our-customers{
     background-image: url('images/wave-copy.png') ;
-    /* Full height */
     height: 100%;
     max-width: 100%;
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% ;
@@ -121,7 +103,6 @@
     background-color: rgba(247, 46, 89, 0.36);
     margin: auto;
     padding:10px;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 .solution-icon-img:hover {
     background-color: #fff;
@@ -130,8 +111,10 @@
 }
 .ship-img{
     position: absolute;
-    bottom: 125px;
-    right: 0px;
+    bottom: 111px;
+    right: -154px;
+    /* bottom: 125px;
+    right: 0px; */
     z-index: 999;
 }
 /* End our custom section css */
@@ -185,8 +168,8 @@
     width:40px;
     height:40px;
     margin-top: -30px;
-   padding: 5px 15px 5px;
-   color: #fff;
+    padding: 5px 15px 5px;
+    color: #fff;
     font-weight: bold;
     font-size: 20px;
     border-radius:50%;
@@ -240,15 +223,11 @@ q {font-style: italic;}
 /* start blogs css */
 .blogs{
     background-image: url('images/wave-bg.png') ;
-    /* Full height */
     height: 100%;
-    
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-/* .img-overlay{} */
 .img-overlay {
     position: relative;
     width: 50%;
@@ -256,7 +235,7 @@ q {font-style: italic;}
 
 .image {
     display: block;
-    /* width: 100%; */
+    width: 100%;
     height: auto;
 }
 .overlay {
@@ -267,7 +246,7 @@ q {font-style: italic;}
     right: 0;
     background-color: rgba(201, 67, 85, 0.5);
     overflow: hidden;
-    width: 85%;
+    width: 95%;
     height: 0;
     transition: .5s ease;
     border-radius: 8px;
@@ -290,6 +269,7 @@ q {font-style: italic;}
     text-align: center;
 }
 /* end blogs */
+
 /* form css */
 .form-control {
     display: block;
@@ -332,15 +312,13 @@ q {font-style: italic;}
     position: absolute;
     top: 230px;
     left: 349px;
-    /* bottom: 168px;
-    left: 370px; */
     z-index: 999;
     transform: rotate(48deg);
-    animation:myanimation 2s infinite;
-    -webkit-animation:myanimation 2s infinite;
-    -moz-animation:myanimation 2s infinite;
-    -o-animation:myanimation 2s infinite;
-    -ms-animation:myanimation 2s infinite;
+    animation:myanimation 10s infinite;
+    -webkit-animation:myanimation 10s infinite;
+    -moz-animation:myanimation 10s infinite;
+    -o-animation:myanimation 10s infinite;
+    -ms-animation:myanimation 10s infinite;
 }
 @keyframes myanimation{
     0%{top:230px;left:349px;transform: rotate(48deg);}
@@ -387,147 +365,529 @@ q {font-style: italic;}
 
 
 /*  start mobile-responsive media queries */
+
 /* @media only screen 
 and (min-device-width : 414px) 
 and (max-device-width : 736px) {  */
     @media only screen and (max-width: 600px) {
-    .section-slider {
-        margin-top: 0px;
-    }
-    .nav-link {
-        text-align:center;
-    }
-    .custom-toggler .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,55,24, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    }
-    .carousel-indicators{
-        bottom:35px;
-    }
-    .carousel-control-next-icon,.carousel-control-prev-icon{
-        display:none;
-    }
-    
-    /* our custom section css */
-    .our-customers{
-        background-image: url('images/wave-copy.png') ;
-        height:100%;
+        .section-slider {
+            margin-top: 0px;
+        }
+        .nav-link {
+            text-align:center;
+        }
         
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100% ;
-    }
-    
-    /* start wheel */
-    .slideshow-container {
-        position: relative;
-        /* background: #f1f1f1f1; */
-        margin-top: 0;
-    }
-    
-    /* start */
-    .img-overlay {
-        position: relative;
-        width: 50%;
-        margin-bottom: 30px;
-    }
-    
-    .image {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    .overlay {
+        .custom-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,55,24, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+        .carousel-indicators{
+            bottom:35px;
+        }
+        .carousel-control-next-icon,.carousel-control-prev-icon{
+            display:block;
+        }
         
-        position: absolute;
-        bottom: 0;
-        left: 15px;
-        right: 0;
-        background-color: rgba(201, 67, 85, 0.5);
-        overflow: hidden;
-        width: 93%;
-        height: 0;
-        transition: .5s ease;
-        border-radius: 8px;
+        /* our custom section css */
+        .our-customers{
+            background-image: url('images/wave-copy.png') ;
+            height:100%;
+            
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% ;
+        }
         
-    }
-    
-    .img-overlay:hover .overlay {
-        height: 100%;
-    }
-    
-    .text {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-    /* end blogs */
-    
-    .arc-img {
-        position: absolute;
-        width: 91px;
-        bottom: 71px;
-        left: 195px;
-        z-index: 999;
-    } 
-    .india-location{
-        position: absolute;
-        top: 85px;
-        left: 165px;
-        z-index: 999;
+        /* start wheel */
+        .slideshow-container {
+            position: relative;
+            /* background: #f1f1f1f1; */
+            margin-top: 0;
+        }
         
-    }
-    .singapore-location{
-        position: absolute;
-        top: 157px;
-        left: 243px;
-        z-index: 999;
-    }
-    .boat-img{
-        position: absolute;
-        width: 18px;
-        top: 124px;
-        left: 190px;
-        z-index: 999;
-        transform: rotate(31deg);
-        animation:myanimation 2s infinite;
-        -webkit-animation:myanimation 2s infinite;
-        -moz-animation:myanimation 2s infinite;
-        -o-animation:myanimation 2s infinite;
-        -ms-animation:myanimation 2s infinite;
-    }
-    @keyframes myanimation{
-        0%{top:124px;left:190px;transform: rotate(31deg);}
-        10%{top:130px;left:187px;transform: rotate(30deg);}
-        20%{top:152px;left:189px;transform: rotate(16deg);}
-        30%{top:170px;left:189px;transform: rotate(-11deg);}
-        40%{top:176px;left:190px;transform: rotate(-20deg);}
-        50%{top:182px;left:200px;transform: rotate(-24deg);}
-        60%{top:188px;left:200px;transform: rotate(-40deg);}
-        70%{top:196px;left:218px;transform: rotate(-48deg);}
-        80%{top:200px;left:235px;transform: rotate(-66deg);}
-        90%{top:205px;left:250px;transform: rotate(-91deg);}       
-        100%{top:198px;left:264px;transform: rotate(-101deg);}
+        /* start */
+        .img-overlay {
+            position: relative;
+            width: 50%;
+            margin-bottom: 30px;
+        }
         
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay {
+            
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            right: 0;
+            background-color: rgba(201, 67, 85, 0.5);
+            overflow: hidden;
+            width: 93%;
+            height: 0;
+            transition: .5s ease;
+            border-radius: 8px;
+            
+        }
+        
+        .img-overlay:hover .overlay {
+            height: 100%;
+        }
+        
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        /* end blogs */
+        .ship-img{
+            position: absolute;
+            bottom: 208px;
+            right: 0;
+            z-index: 999;
+        }
+        
+        .arc-img {
+            position: absolute;
+            /* width: 78px;
+            bottom: 64px;
+            left: 169px; */
+            width: 22%;
+            bottom: 25%;
+            left: 46%;
+            z-index: 999;
+        } 
+        .india-location{
+            position: absolute;
+            /* top:66px;
+            left:138px; */
+            top: 27%;
+            left: 39%;
+            z-index: 999;
+            
+        }
+        .singapore-location{
+            position: absolute;
+            /* top:128px;
+            left:204px; */
+            top: 52%;
+            left: 57%;
+            z-index: 999;
+        }
+        .boat-img{
+            position: absolute;
+            width: 18px;
+            /* top: 107px;
+            left: 162px; */
+            top: 43%;
+            left: 45%;
+            z-index: 999;
+            transform: rotate(31deg);
+            animation:myanimation 2s infinite;
+            -webkit-animation:myanimation 2s infinite;
+            -moz-animation:myanimation 2s infinite;
+            -o-animation:myanimation 2s infinite;
+            -ms-animation:myanimation 2s infinite;
+        }
+        @keyframes myanimation{
+            /* 0%{top:124px;left:190px;transform: rotate(31deg);}
+            10%{top:130px;left:187px;transform: rotate(30deg);}
+            20%{top:152px;left:189px;transform: rotate(16deg);}
+            30%{top:170px;left:189px;transform: rotate(-11deg);}
+            40%{top:176px;left:190px;transform: rotate(-20deg);}
+            50%{top:182px;left:200px;transform: rotate(-24deg);}
+            60%{top:188px;left:200px;transform: rotate(-40deg);}
+            70%{top:196px;left:218px;transform: rotate(-48deg);}
+            80%{top:200px;left:235px;transform: rotate(-66deg);}
+            90%{top:205px;left:250px;transform: rotate(-91deg);}       
+            100%{top:198px;left:264px;transform: rotate(-101deg);} */
+            
+        }
+        @-webkit-keyframes myanimation
+        {
+            /* 0%{top:124px;left:190px;transform: rotate(31deg);}
+            10%{top:130px;left:187px;transform: rotate(30deg);}
+            20%{top:152px;left:189px;transform: rotate(16deg);}
+            30%{top:170px;left:189px;transform: rotate(-11deg);}
+            40%{top:176px;left:190px;transform: rotate(-20deg);}
+            50%{top:182px;left:200px;transform: rotate(-24deg);}
+            60%{top:188px;left:200px;transform: rotate(-40deg);}
+            70%{top:196px;left:218px;transform: rotate(-48deg);}
+            80%{top:200px;left:235px;transform: rotate(-66deg);}
+            90%{top:205px;left:250px;transform: rotate(-91deg);}       
+            100%{top:198px;left:264px;transform: rotate(-101deg);} */
+        }	
     }
-    @-webkit-keyframes myanimation
-    {
-        0%{top:124px;left:190px;transform: rotate(31deg);}
-        10%{top:130px;left:187px;transform: rotate(30deg);}
-        20%{top:152px;left:189px;transform: rotate(16deg);}
-        30%{top:170px;left:189px;transform: rotate(-11deg);}
-        40%{top:176px;left:190px;transform: rotate(-20deg);}
-        50%{top:182px;left:200px;transform: rotate(-24deg);}
-        60%{top:188px;left:200px;transform: rotate(-40deg);}
-        70%{top:196px;left:218px;transform: rotate(-48deg);}
-        80%{top:200px;left:235px;transform: rotate(-66deg);}
-        90%{top:205px;left:250px;transform: rotate(-91deg);}       
-        100%{top:198px;left:264px;transform: rotate(-101deg);}
-    }	
-}
+    @media only screen and (min-width: 768px) {
+        .max-width-1000{
+            max-width:1000px;
+        }
+        .row .col { 
+            height: 100px; 
+            background: green; 
+        }
+        
+        /* navbar css */
+        .nav-item:active {
+            border-bottom: 2px solid red;
+        }
+        .nav-item .active {
+            background-color:none;
+        }
+        .nav-link {
+            text-decoration: none;
+            font-weight: 600;
+            color:#000;
+        }
+        .nav-link:hover {
+            text-decoration: none;
+            border-bottom: 2px solid red;
+            color:rgb(61, 61, 59);
+        }
+        .trn-nav{
+           
+            z-index:99;
+        }
+        .custom-toggler .navbar-toggler-icon {
+            background-image: url
+            ("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,550,24, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+        /* end navbar css */
+        
+        /* background carousal slider */
+        .section-slider{
+            margin-top:-116px;
+        }
+        
+        .carousel-indicators{
+            bottom:60px;
+        }
+        .carousel-indicators li{
+            width:15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+        .carousel-indicators .active{
+            background-color: tomato;
+        }
+        .carousel-control-next-icon,.carousel-control-prev-icon{
+            display:block;
+        }
+        .carousel-caption {
+            position: absolute;
+            /* right: 15%; */
+            top: 345px;
+            left: 60%;
+            z-index: 10;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        /* End background carousal slider */
+        
+        /* our custom section css */
+        .our-customers{
+            background-image: url('images/wave-copy.png') ;
+            height: 100%;
+            max-width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% ;
+        }
+        .icon-img{
+            width: 120px;
+            height: 120px;
+            border: none;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .horizontal-line-custom{
+            margin: auto;
+            width: 40px;
+            height: 2px;
+            border: 2px solid red;
+            text-align:center;
+        }
+        .solution-icon-img{
+            width: 120px;
+            height: 120px;
+            border: none;
+            border-radius: 50%;
+            color:white;
+            background-color: rgba(247, 46, 89, 0.36);
+            margin: auto;
+            padding:10px;
+        }
+        .solution-icon-img:hover {
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 10%;
+        }
+        .ship-img{
+            position: absolute;
+            bottom: 111px;
+            /* right: -154px; */
+            right: 0;
+            /* bottom: 125px;
+            right: 0px; */
+            z-index: 999;
+        }
+        /* End our custom section css */
+        
+        /* wheel animation section css */
+        .btn-icon{
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+        
+        .btn-icon:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .prev {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        
+        .next {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        
+        .round {
+            border-radius: 50%;
+        }
+        /* end */
+        
+        /* start text-slider / Slideshow container */
+        
+        .slideshow-container {
+            position: relative;
+            margin-top: 180px;
+        }
+        
+        /* Slides */
+        .mySlides {
+            display: none;
+            padding: 80px;
+            text-align: center;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width:40px;
+            height:40px;
+            margin-top: -30px;
+            padding: 5px 15px 5px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius:50%;
+            user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+            position: absolute;
+            right: 0;
+            
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color:rgba(0, 0, 0, 0.13);
+            color: white;
+        }
+        
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        /* Add a background color to the active dot/circle */
+        .dot:hover {
+            background-color: #717171;
+        }
+        
+        /* Add an italic font style to all quotes */
+        q {font-style: italic;}
+        
+        /* Add a blue color to the author */
+        .author {color: cornflowerblue;}
+        /* end */
+        
+        /* start blogs css */
+        .blogs{
+            background-image: url('images/wave-bg.png') ;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .img-overlay {
+            position: relative;
+            width: 50%;
+        }
+        
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay {
+            
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            right: 0;
+            background-color: rgba(201, 67, 85, 0.5);
+            overflow: hidden;
+            width: 95%;
+            height: 0;
+            transition: .5s ease;
+            border-radius: 8px;
+            
+        }
+        
+        .img-overlay:hover .overlay {
+            height: 100%;
+        }
+        
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        /* end blogs */
+        
+        /* form css */
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .75rem + 5px);
+            padding: 1.8rem .95rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        .custom-btn{
+            border-radius: 30px;
+        }
+        .arc-img{
+            position: absolute;
+            bottom: 135px;
+            left: 350px;
+            z-index: 999;
+        }
+        .india-location{
+            position: absolute;
+            top: 198px;
+            left: 338px;
+            z-index: 999;
+            
+        }
+        .singapore-location{
+            position: absolute;
+            top: 334px;
+            left: 490px;
+            z-index: 999;
+        }
+        .boat-img{
+            position: absolute;
+            top: 230px;
+            left: 349px;
+            z-index: 999;
+            transform: rotate(48deg);
+            animation:myanimation 10s infinite;
+            -webkit-animation:myanimation 10s infinite;
+            -moz-animation:myanimation 10s infinite;
+            -o-animation:myanimation 10s infinite;
+            -ms-animation:myanimation 10s infinite;
+        }
+        @keyframes myanimation{
+            0%{top:230px;left:349px;transform: rotate(48deg);}
+            10%{top:249px;left:338px;transform: rotate(30deg);}
+            20%{top:281px;left:338px;transform: rotate(22deg);}
+            30%{top:304px;left:339px;transform: rotate(7deg);}
+            40%{top:335px;left:349px;transform: rotate(-9deg);}
+            50%{top:345px;left:355px;transform: rotate(-20deg);}
+            60%{top:347px;left:353px;transform: rotate(-26deg);}
+            70%{top:353px;left:358px;transform: rotate(-29deg);}
+            75%{top:360px;left:370px;transform: rotate(-29deg);}
+            80%{top:375px;left:376px;transform: rotate(-49deg);}
+            85%{top:379px;left:380px;transform: rotate(-53deg);}
+            90%{top:377px;left:388px;transform: rotate(-44deg);}
+            95%{top:380px;left:394px;transform: rotate(-54deg);}
+            96%{top:382px;left:390px;transform: rotate(-55deg);}
+            97%{top:387px;left:406px;transform: rotate(-61deg);}
+            98%{top:391px;left:415px;transform: rotate(-65deg);}
+            99%{top:392px;left:434px;transform: rotate(-72deg);}
+            100%{top:380px;left:490px;transform: rotate(-87deg);}
+            
+        }
+        @-webkit-keyframes myanimation
+        {
+            0%{top:230px;left:349px;transform: rotate(48deg);}
+            10%{top:249px;left:338px;transform: rotate(30deg);}
+            20%{top:281px;left:338px;transform: rotate(22deg);}
+            30%{top:304px;left:339px;transform: rotate(7deg);}
+            40%{top:335px;left:349px;transform: rotate(-9deg);}
+            50%{top:345px;left:355px;transform: rotate(-20deg);}
+            60%{top:347px;left:353px;transform: rotate(-26deg);}
+            70%{top:353px;left:358px;transform: rotate(-29deg);}
+            75%{top:360px;left:370px;transform: rotate(-29deg);}
+            80%{top:375px;left:376px;transform: rotate(-49deg);}
+            85%{top:379px;left:380px;transform: rotate(-53deg);}
+            90%{top:377px;left:388px;transform: rotate(-44deg);}
+            95%{top:380px;left:394px;transform: rotate(-54deg);}
+            96%{top:382px;left:390px;transform: rotate(-55deg);}
+            97%{top:387px;left:406px;transform: rotate(-61deg);}
+            98%{top:391px;left:415px;transform: rotate(-65deg);}
+            99%{top:392px;left:434px;transform: rotate(-72deg);}
+            100%{top:380px;left:490px;transform: rotate(-87deg);}
+        }	
+        
+
+    }
