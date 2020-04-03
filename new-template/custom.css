@@ -327,11 +327,11 @@ q {font-style: italic;}
     top: 159px;
     left: 445px;
     z-index: 999;
-    /* margin: 20px auto 0; */
+   
     color: orange;
     font-size: 100px;
     line-height: 1;
-    -ms-transform: rotate(105deg); /* IE 9 */
+    -ms-transform: rotate(105deg);
     transform: rotate(105deg);
     animation: circle 5s linear infinite;
     transform-origin: 70% 144px;
@@ -344,11 +344,11 @@ q {font-style: italic;}
     to { transform:rotate(-210deg); }
 }
 
-@keyframes boat-img{
+/* @keyframes boat-img{
     from { transform:rotate(-45deg); }
     to { transform:rotate(
     -130deg); }
-}
+} */
 /* .boat-img{
     position: absolute;
     top: 230px;

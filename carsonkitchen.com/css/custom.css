@@ -1,0 +1,54 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.trans-dark {
+	background-color: rgba(0,0,0,0.4)
+}
+
+.bg-medium-1 {
+	background-color: #E9C2F8;
+}
+
+.third-thumbs li{ width: 33.333333% 
+}
+
+.bg-menu-2{
+	background-color: #B0B0B0
+}
+
+.bg-menu-3{
+	background-color: #FFFFFF
+}
+
+.bg-menu-4 {
+    background-color: #7774B3;
+}
+
+.nav_bg{
+	background-color: rgba(0,0,0,0.30)
+}
+
+.font_red{
+	color: #FF0000;
+}
+
+.font_blue{
+	color: #0200FF;
+	cursor: pointer;
+}
+
+.intro-trans{
+    cursor: pointer;
+    background-color: rgba(0,0,214,0.85);
+    padding-top: 10px;
+    border-radius: 4px;
+    padding-bottom: 0px;
+}
+
+.bg-contact {
+    background-color: #F0DFF6;
+}
+
+.contact-pad {
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
